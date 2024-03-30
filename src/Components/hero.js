@@ -202,7 +202,7 @@ export default function HeroMain() {
             // Execute call to action for the team
             // This should be the POST action to the backend
 
-            axios.post('http://a21492cd1de484c3ab1f0ae46b63acb1-436188089.us-east-2.elb.amazonaws.com:8000/relay/request-info/', triageAnswers);
+            axios.post('https://api.arkheath.net/relay/request-info/', triageAnswers);
             // axios.post('http://ark-health-server.us-east-1.elasticbeanstalk.com/relay/request-info/', triageAnswers); // doesn't work without significant effort
         }
     }, [triageAnswers]);
